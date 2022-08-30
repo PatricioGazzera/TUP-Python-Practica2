@@ -16,6 +16,11 @@ def maximo_encadenado(a: float, b: float, c: float) -> float:
 
 
 # NO MODIFICAR - INICIO
+    if(a>b):
+            return a
+    elif(c>b):
+        return c
+    return b
 assert maximo_encadenado(1, 10, 5) == 10
 assert maximo_encadenado(5, 10, 1) == 10
 assert maximo_encadenado(5, 10, 5) == 10
@@ -40,6 +45,8 @@ def maximo_cuadruple(a: float, b: float, c: float, d: float) -> float:
 
 
 # NO MODIFICAR - INICIO
+    maximo_cuadruple = max(a, b, c, d)
+
 assert maximo_cuadruple(1, 10, 5, -5) == 10
 assert maximo_cuadruple(4, 9, 18, 6) == 18
 assert maximo_cuadruple(24, 9, 18, 20) == 24
@@ -57,6 +64,10 @@ def maximo_arbitrario(*args) -> float:
 
 
 # NO MODIFICAR - INICIO
+    for valor in args:
+        maximo_arbitrario = max(args)
+        return maximo_arbitrario
+
 assert maximo_arbitrario(1, 10, 5, -5) == 10
 assert maximo_arbitrario(4, 9, 18, 6) == 18
 assert maximo_arbitrario(24, 9, 18, 20) == 24
