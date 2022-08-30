@@ -64,9 +64,7 @@ def maximo_arbitrario(*args) -> float:
 
 
 # NO MODIFICAR - INICIO
-    for valor in args:
-        maximo_arbitrario = max(args)
-        return maximo_arbitrario
+    maximo_arbitrario = max(*args)
 
 assert maximo_arbitrario(1, 10, 5, -5) == 10
 assert maximo_arbitrario(4, 9, 18, 6) == 18
