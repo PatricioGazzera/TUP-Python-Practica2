@@ -55,9 +55,7 @@ def maximo_ternario(a: float, b: float) -> float:
 
 
 # NO MODIFICAR - INICIO
-    if (a>b):
-        return a
-    return b
+    maximo_ternario = "si" if a >= b else "no"
 
 assert maximo_ternario(10, 5) == 10
 assert maximo_ternario(9, 18) == 18
