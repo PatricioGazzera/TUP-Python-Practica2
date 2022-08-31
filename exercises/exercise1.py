@@ -2,6 +2,7 @@
 
 
 from re import A
+import string
 
 
 def maximo_basico(a: float, b: float) -> float:
@@ -55,6 +56,8 @@ def maximo_ternario(a: float, b: float) -> float:
 
 
 # NO MODIFICAR - INICIO
+
+    maximo_ternario = "si" if (a >= b) else "no"
 
 assert maximo_ternario(10, 5) == 10
 assert maximo_ternario(9, 18) == 18
