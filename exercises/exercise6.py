@@ -15,6 +15,12 @@ def numeros_al_final_basico(lista: List[Union[float, str]]) -> List[Union[float,
 
 
 # NO MODIFICAR - INICIO
+    numeros = lista.pop(1, 3, 10)
+    list(range(numeros))
+    i:0 
+    for i in range(numeros):
+        numeros_al_final_basico = lista.append(numeros)
+
 assert numeros_al_final_basico([3, "a", 1, "b", 10, "j"]) == ["a", "b", "j", 3, 1, 10]  # noqa: E501
 # NO MODIFICAR - FIN
 
