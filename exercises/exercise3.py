@@ -20,9 +20,9 @@ def operacion_basica(a: float, b: float, multiplicar: bool) -> Union[float, str]
     if bool(multiplicar) == True:
         operacion_basica = a * b
     elif b == 0:
-        operacion_basica = a / b
+            print("Operación no válida")
     else:
-        print("Operación no válida")
+            operacion_basica = a / b
 
 
 
