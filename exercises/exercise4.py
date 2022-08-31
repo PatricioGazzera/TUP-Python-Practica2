@@ -1,6 +1,9 @@
 """Expresiones Booleanas."""
 
 
+from pickle import TRUE
+
+
 def es_vocal_if(letra: str) -> bool:
     """Toma un string y devuelve un booleano en base a si letra es una vocal o
     no.
@@ -16,6 +19,21 @@ def es_vocal_if(letra: str) -> bool:
 
 
 # NO MODIFICAR - INICIO
+    vocal=letra.lower()
+    if vocal == "A":
+        return True
+    if vocal == "E":
+        return True
+    if vocal == "I":
+        return True
+    if vocal == "O":
+        return True           
+    if vocal == "U":
+        return True
+    return False
+        
+
+
 assert es_vocal_if("a")
 assert not es_vocal_if("b")
 assert es_vocal_if("A")
@@ -42,6 +60,15 @@ def es_vocal_if_in(letra: str) -> bool:
 
 
 # NO MODIFICAR - INICIO
+
+    if es_vocal_if_in in ("a","A") == True:
+        return es_vocal_if_in
+    else:
+        return not es_vocal_if_in    
+
+
+
+
 assert es_vocal_if_in("a")
 assert not es_vocal_if_in("b")
 assert es_vocal_if_in("A")
@@ -63,6 +90,10 @@ def es_vocal_in(letra: str) -> bool:
 
 
 # NO MODIFICAR - INICIO
+
+    es_vocal_in in("a","A") == True
+    return es_vocal_in or not es_vocal_in
+
 assert es_vocal_in("a")
 assert not es_vocal_in("b")
 assert es_vocal_in("A")
