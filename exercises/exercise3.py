@@ -57,6 +57,7 @@ def operacion_multiple(a: float, b: float, multiplicar: bool) -> Union[float, st
 
 
 
+
 assert operacion_multiple(1, 1, True) == 1
 assert operacion_multiple(1, 1, False) == 1
 assert operacion_multiple(25, 5, True) == 125
