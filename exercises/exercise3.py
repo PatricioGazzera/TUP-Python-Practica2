@@ -53,9 +53,13 @@ def operacion_multiple(a: float, b: float, multiplicar: bool) -> Union[float, st
 
 
 # NO MODIFICAR - INICIO
+    if bool(multiplicar) == True:
+            operacion_basica = a * b
+            return operacion_basica
 
-
-
+    if bool(multiplicar) == False:
+        operacion_basica = a / b
+        return operacion_basica
 
 
 assert operacion_multiple(1, 1, True) == 1
