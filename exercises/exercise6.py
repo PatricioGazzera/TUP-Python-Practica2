@@ -38,5 +38,11 @@ def numeros_al_final_comprension(lista: List[Union[float, str]]) -> List[Union[f
 
 
 # NO MODIFICAR - INICIO
+
+    numeros_al_final_comprension([3, "a", 1, "b", 10, "j"])
+    numeros_al_final_comprension.pop([3, 1, 10])
+    numeros_al_final_comprension.extend([3, 1, 10])
+    
+
 assert numeros_al_final_comprension([3, "a", 1, "b", 10, "j"]) == ["a", "b", "j", 3, 1, 10]  # noqa: E501
 # NO MODIFICAR - FIN
